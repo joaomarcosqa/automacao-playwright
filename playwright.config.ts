@@ -2,7 +2,7 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   reporter: [['html', { outputFolder: 'report' }]],
-  testDir: './tests',
+  testDir: './e2e',
   timeout: 30 * 1000,
   expect: {
     timeout: 5000
